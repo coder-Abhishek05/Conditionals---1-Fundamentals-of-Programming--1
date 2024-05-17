@@ -1,0 +1,205 @@
+Q1 ----------------->
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int i1,i2;
+    cout<< "enter interger 1: ";
+    cin>> i1;
+    cout<< "enter interger 2: ";
+    cin>> i2;
+    i1>i2 ? cout<<i1<<" is greater": cout<<i2<<" is greater";
+}
+
+Q2------------------->
+
+#include <iostream>
+using namespace std;
+#define PI 3.14
+
+int main(){
+    int area, circum , radius;
+    cout<< "Enter the radius :";
+    cin>> radius;
+    area = PI * radius *radius;
+    circum = PI * 2* radius;
+    if (area>circum){
+        cout<< "The area of circle is larger than circumference";
+    }
+    else{
+        cout<< "The area of circle is not larger than circumference";
+    }
+}
+
+Q3---------------------->
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int year;
+    bool flag =0;
+    cout<< "Enter the year ";
+    cin>> year;
+    if( year % 4 == 0){
+        if ( year % 100){
+            if (year % 400){
+                cout<< year<<" is a leap year";
+                flag =1;
+            }
+        }
+        if (flag == 0){
+            cout<< year<<" is a leap year";
+        }
+    }
+    else{
+        cout<< year<<" is not a leap year";
+    }
+}
+
+
+Q4------------------------->
+
+#include <iostream>
+using namespace std;
+#define PI 3.14
+
+int main(){
+    int area, peri , length, width;
+    cout<< "Enter the length :";
+    cin>> length;
+    cout<< "Enter the width :";
+    cin>> width;
+    area = length * width;
+    peri = 2*(length + width);
+    if (area> peri){
+        cout<< "The area of rectangle is greater than circumference";
+    }
+    else{
+        cout<< "The area of rectangle is not greater than perimeter";
+    }
+}
+
+
+Q5 ------------------------------->
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int s1,s2,s3;
+    cout<<"Enter the sides of the triangle \n";
+    cin>> s1>> s2>> s3;
+    if (s1 == s2 == s3){
+        cout<< "The trianlge is equilateral";
+    }
+    else if ((s1==s2) || (s2 == s3) || (s3 == s1)){
+        cout<< "The triangle is isosceles";
+    }
+    else{
+        cout<< "The trianlge is scalene";
+    }
+}
+
+
+Q6-------------------------->
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int s1,s2,s3;
+    cout<<"Enter the marks of student 1: ";
+    cin>> s1;
+    cout<<"Enter the marks of student 2: ";
+    cin>>s2;
+    cout<<"Enter the marks of student 3: ";
+    cin>> s3;
+    if ((s1 < s2) && (s1 < s3)){
+        cout<< "student 1 have leat marks";
+    }
+    else if ((s2 < s1) && (s3 > s2)){
+        cout<< "student 2 have leat marks";
+    }
+    else{
+        cout<< "student 3 have leat marks";
+    }
+}
+
+Q7 -------------------------------->
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int x,y;
+    cout<< "enter coordinate x: ";
+    cin>> x;
+    cout<< "enter coordinate y: ";
+    cin>> y;
+    if (x==0 && y==0){
+        cout<< "the point lie on origin";
+    }
+    else if ( x==0 ){
+        cout<< "The point lie on y axes";
+    }
+    else if (y==0){
+        cout<< "The point lie on x axes";
+    }
+}
+
+
+Q8----------------------------------->
+
+
+#include <iostream>
+using namespace std;
+#include <math.h>
+
+
+int main(){
+    float x1,y1,x2,y2,x3,y3;
+    cout<< "enter coordinate x1, y1: ";
+    cin>> x1 >> y1;
+    cout<< "enter coordinate x2, y2: ";
+    cin>> x2 >> y2;
+    cout<< "enter coordinate x3, y3: ";
+    cin>> x3 >> y3;
+    if (abs((y1-y2)/(x1- x2)) == abs((y2 - y3)/(x2 - x3))){
+        cout<< "Yes the point belong to a line";
+    }
+    else{
+        cout<< "Not belong to a line";
+    }
+}
+
+
+Q9--------------------------------->
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    char ch;
+    cout<< "Enter a character : ";
+    cin>> ch;
+    if (((int)ch >= 65 && (int)ch <= 90) || ((int)ch >= 96 && (int)ch <= 122)){
+        cout<< "Entered value is a character";
+    }
+    else if(((int)ch >=48 && (int)ch <= 57)){
+        cout<< "Entered value is a number";
+    }
+    else{
+        cout<< "entered value is a special character";
+    }
+}
+
+
+Q10------------------------------------->
+
+value of b and c are respectively 300 and 200
